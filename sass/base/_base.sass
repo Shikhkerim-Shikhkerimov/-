@@ -3,3 +3,27 @@
 
 // шрифты (Unbounded Semibold, Manrope Regular)
 @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Unbounded:wght@600&display=swap')
+
+// базовые стили
+html
+    font-size: 62.5%
+
+body
+    font-family: $mainText
+    background-color: #ECEBE9
+    color: #545454
+    font-size: 1.6rem
+
+// базовые стили для контейнера
+.container
+    max-width: 1360px
+    margin: 0 auto
+
+// базовые стили для ссылок
+a
+    text-decoration: none
+    color: #545454
+    transition: color 1s
+    letter-spacing: .1rem
+    &:hover
+        color: $blue

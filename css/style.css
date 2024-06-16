@@ -1,4 +1,111 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope&family=Unbounded:wght@600&display=swap");
+.nav-btn {
+  padding: 1rem;
+  border: 1px solid #231F1F;
+  border-radius: 22.5rem;
+  background: none;
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.header-btn {
+  padding: 1rem 2.5rem;
+  border: 2px solid #fff;
+  border-radius: 2.2rem;
+  background: none;
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+}
+.header-btn__link {
+  color: #fff;
+}
+
+.title-h1 {
+  font-family: "Unbounded", sans-serif;
+  font-weight: 500;
+  font-size: 10rem;
+  line-height: 125%;
+  text-transform: uppercase;
+  text-align: right;
+  color: #fff;
+}
+
 * {
   box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: #ECEBE9;
+  color: #545454;
+  font-size: 1.6rem;
+}
+
+.container {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #545454;
+  transition: color 1s;
+  letter-spacing: 0.1rem;
+}
+a:hover {
+  color: #29354B;
+}
+
+.nav-menu {
+  width: 100%;
+  position: fixed;
+  background-color: #ECEBE9;
+}
+
+.nav-menus__wrapper {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  min-width: 11.5rem;
+  max-height: 5rem;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu__item {
+  margin-right: 2.5rem;
+}
+.menu__item:nth-child(4) {
+  margin-right: 8rem;
+}
+
+.header-section {
+  background: url(./../img/header/header-bg.png) center/cover no-repeat;
+}
+.header-section__wrapper {
+  height: 100vh;
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.header-section__title {
+  max-width: 103.5rem;
 }
