@@ -1,0 +1,56 @@
+.slider-section
+    margin-bottom: 15rem
+    &__top
+        padding: 15rem 0
+    &__title
+        display: flex
+        align-items: center
+        margin-bottom: 6rem
+        img
+            margin-right: 2rem
+    &__text
+        font-size: 2.2rem
+        line-height: 150%
+
+// слайдер
+.slider
+    width: 100%
+    height: 100vh
+    position: relative
+
+.item
+    width: 100%
+    height: 100%
+    position: absolute
+    z-index: 1
+    top: 50%
+    transform: translate(0, -50%)
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+// кнопки слайдера
+.buttons
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 2
+    width: 100%
+    display: flex
+    justify-content: space-between
+    padding: 0 10rem
+    button
+        width: 5rem
+        height: 5rem
+        padding: 0
+        border: none
+        border-radius: 50%
+        transition: .5s
+        img
+            width: 100%
+            height: 100%
+
+.buttons button:hover
+    transform: scale(1.1)
