@@ -261,3 +261,25 @@ a:hover {
 .number {
   font-size: 8rem;
 }
+
+.section-price {
+  background: #29354B;
+  padding: 5rem 0;
+}
+.section-price__content {
+  display: flex;
+  justify-content: space-evenly;
+  color: #FFFFFF;
+  margin-bottom: 13rem;
+}
+.section-price__text {
+  margin-bottom: 2rem;
+}
+.section-price__list {
+  list-style: disc;
+  line-height: 150%;
+}
+.section-price__inf {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
