@@ -7,7 +7,6 @@
   font-weight: 600;
   font-size: 1.3rem;
   text-align: center;
-  cursor: pointer;
 }
 
 .header-btn {
@@ -18,7 +17,6 @@
   font-weight: 600;
   font-size: 2rem;
   text-align: center;
-  cursor: pointer;
 }
 .header-btn__link {
   color: #fff;
@@ -34,7 +32,6 @@
   line-height: 120%;
   text-align: center;
   color: #000;
-  cursor: pointer;
 }
 
 .title-box {
@@ -68,7 +65,7 @@
   line-height: 120%;
 }
 .title-h2_white {
-  color: white;
+  color: #fff;
 }
 
 * {
@@ -97,6 +94,7 @@ a {
   color: #545454;
   transition: color 1s;
   letter-spacing: 0.1rem;
+  cursor: pointer;
 }
 a:hover {
   color: #29354B;
@@ -230,7 +228,7 @@ a:hover {
   position: absolute;
   top: 20%;
   left: 10%;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .tour-program {
@@ -289,7 +287,7 @@ a:hover {
 .section-price__content {
   display: flex;
   justify-content: space-evenly;
-  color: #FFFFFF;
+  color: #fff;
   margin-bottom: 13rem;
 }
 .section-price__text {
@@ -358,4 +356,34 @@ a:hover {
 .feedback__right img {
   width: 100%;
   height: 100%;
+}
+
+.footer {
+  background: #29354B;
+}
+.footer__container {
+  padding: 4rem 0 11.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 2.2rem;
+  color: #fff;
+}
+.footer__social-network {
+  display: flex;
+  align-items: center;
+}
+.footer__social-network img {
+  width: 100%;
+  height: 100%;
+}
+.footer__link {
+  margin-bottom: 1rem;
+}
+.footer__link:nth-child(-n+2) {
+  margin-right: 2rem;
+}
+.footer__number {
+  font-size: 2.2rem;
+  color: #fff;
 }
