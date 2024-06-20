@@ -7,6 +7,7 @@
   font-weight: 600;
   font-size: 1.3rem;
   text-align: center;
+  cursor: pointer;
 }
 
 .header-btn {
@@ -17,9 +18,23 @@
   font-weight: 600;
   font-size: 2rem;
   text-align: center;
+  cursor: pointer;
 }
 .header-btn__link {
   color: #fff;
+}
+
+.feedback-btn {
+  max-width: 32rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 2.2rem;
+  background: #ECEBE9;
+  font-size: 2.2rem;
+  line-height: 120%;
+  text-align: center;
+  color: #000;
+  cursor: pointer;
 }
 
 .title-box {
@@ -29,6 +44,9 @@
 }
 .title-box img {
   margin-right: 2rem;
+}
+.title-box_mb {
+  margin-bottom: 2rem;
 }
 
 .title-h1 {
@@ -47,6 +65,7 @@
   font-size: 3rem;
   text-transform: uppercase;
   color: #000;
+  line-height: 120%;
 }
 .title-h2_white {
   color: white;
@@ -181,6 +200,7 @@ a:hover {
   border: none;
   border-radius: 50%;
   transition: 0.5s;
+  cursor: pointer;
 }
 .buttons button img {
   width: 100%;
@@ -282,4 +302,60 @@ a:hover {
 .section-price__inf {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.feedback {
+  background: linear-gradient(180deg, #d9d9d9 0%, #29354b 100%);
+}
+.feedback__container {
+  height: -moz-max-content;
+  height: max-content;
+  padding: 15rem 0;
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+}
+.feedback__left {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+.feedback__text {
+  font-size: 2.2rem;
+  color: #000;
+  margin-bottom: 3.8rem;
+}
+.feedback__input {
+  border: none;
+  outline: none;
+  padding: 1rem 3rem;
+  border-radius: 2.2rem;
+  background: rgba(236, 235, 233, 0.34);
+  max-width: 32rem;
+  max-height: 4rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  color: #fff;
+}
+.feedback__input::-moz-placeholder {
+  color: #fff;
+}
+.feedback__input::placeholder {
+  color: #fff;
+}
+.feedback__input:nth-last-of-type(1) {
+  margin-bottom: 2.5rem;
+}
+.feedback__right {
+  max-width: 44rem;
+  max-height: 38rem;
+  padding: 2.5rem 0 0;
+}
+.feedback__right img {
+  width: 100%;
+  height: 100%;
 }
