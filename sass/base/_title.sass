@@ -4,17 +4,27 @@
     margin-bottom: 6rem
     img
         margin-right: 2rem
+        @include adaptiv(horizontalPhone)
+            max-width: 8.5rem
+            max-height: 8.5rem
+        @include adaptiv(verticalPhone)
+            max-width: 8rem
+            max-height: 8rem
     &_mb
         margin-bottom: 2rem
 
 .title-h1
     font-family: $headings
     font-weight: 500
-    font-size: 10rem
+    font-size: 9rem
     line-height: 125%
     text-transform: uppercase
     text-align: right
     color: $white
+    @include adaptiv(horizontalPhone)
+        font-size: 7rem
+    @include adaptiv(verticalPhone)
+        font-size: 3.6rem
 
 .title-h2
     font-family: $headings
@@ -23,5 +33,9 @@
     text-transform: uppercase
     color: $black
     line-height: 120%
+    @include adaptiv(horizontalPhone)
+        font-size: 2.5rem
+    @include adaptiv(verticalPhone)
+        font-size: 2rem
     &_white
         color: $white

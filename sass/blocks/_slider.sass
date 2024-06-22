@@ -1,10 +1,16 @@
 .slider-section
     margin-bottom: 15rem
+    @include adaptiv(horizontalPhone)
+            margin-bottom: 10rem
     &__top
         padding: 15rem 0
+        @include adaptiv(horizontalPhone)
+            padding: 10rem 0
     &__text
         font-size: 2.2rem
         line-height: 150%
+        @include adaptiv(verticalPhone)
+            font-size: 1.6rem
 
 // слайдер
 .slider
@@ -34,7 +40,9 @@
     width: 100%
     display: flex
     justify-content: space-between
-    padding: 0 10rem
+    padding: 0 5rem
+    @include adaptiv(verticalPhone)
+        padding: 0 2rem
     button
         width: 4rem
         height: 4rem
@@ -43,6 +51,9 @@
         border-radius: 50%
         transition: .5s
         cursor: pointer
+        @include adaptiv(verticalPhone)
+            width: 3rem
+            height: 3rem
         img
             width: 100%
             height: 100%

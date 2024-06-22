@@ -1,14 +1,20 @@
 .tour-program
     margin-bottom: 15rem
+    @include adaptiv(horizontalPhone)
+            margin-bottom: 10rem
 
 // контент (общие стили для секции about-us и tour-program)
 .content
     display: grid
-    grid-template-columns: repeat(2, 55rem)
-    grid-template-rows: 33rem
+    grid-template-columns: repeat(2, minmax(25rem, 55rem))
+    // grid-template-columns: repeat(auto-fit, )
+    grid-template-rows: max-content
     justify-content: center
     justify-items: center
+    gap: 2rem
     margin-bottom: 13rem
+    @include adaptiv(horizontalPhone)
+        margin-bottom: 10rem
     &:nth-child(4)
         margin-bottom: 0
     &__box
@@ -36,3 +42,5 @@
 
 .number
     font-size: 8rem
+    @include adaptiv(horizontalPhone)
+        font-size: 5rem

@@ -17,6 +17,8 @@
     font-weight: 600
     font-size: 2rem
     text-align: center
+    @include adaptiv(horizontalPhone)
+        font-size: 1.7rem
     &__link
         color: $white
 
@@ -31,3 +33,7 @@
     line-height: 120%
     text-align: center
     color: #000
+    @include adaptiv(horizontalPhone)
+        font-size: 1.7rem
+    @include adaptiv(verticalPhone)
+            max-width: 100%
