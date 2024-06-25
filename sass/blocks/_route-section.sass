@@ -6,14 +6,52 @@
         box-shadow: inset 0 4px 0 0 rgba(0, 0, 0, 0.26)
         background: linear-gradient(180deg, #29354b 0%, rgba(255, 255, 255, 0) 100%)
         position: relative
-        padding: 5rem 15rem
         z-index: -1
         height: 100vh
+        @include adaptiv(verticalPhone)
+            background: none
+            box-shadow: none
+            z-index: 1
     &__route
-        width: 100%
-        height: 100%
+        max-width: 100%
+        max-height: 100%
+        padding: 5rem 1rem
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        @include adaptiv(verticalPhone)
+            display: none
     &__box
         position: absolute
         top: 20%
         left: 10%
         color: $white
+        @include adaptiv(verticalPhone)
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            color: $black
+    &__text
+        @include adaptiv(verticalPhone)
+            margin-bottom: 3rem
+    &__mobileBtn
+        display: none
+        width: 100%
+        text-align: center
+        @include adaptiv(verticalPhone)
+            display: block
+
+
+.blackIcon
+    display: none
+    @include adaptiv(verticalPhone)
+        display: block
+
+.whiteIcon
+    @include adaptiv(verticalPhone)
+        display: none
+
+.colorBlack
+    @include adaptiv(verticalPhone)
+        color: $black
