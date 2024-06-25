@@ -451,8 +451,21 @@ a:hover {
 .section-price__content {
   display: flex;
   justify-content: space-evenly;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
   color: #fff;
   margin-bottom: 13rem;
+}
+@media (max-width: 800px) {
+  .section-price__content {
+    flex-direction: column;
+    margin-bottom: 3.5rem;
+  }
+}
+@media (max-width: 800px) {
+  .section-price__left {
+    margin-bottom: 7.5rem;
+  }
 }
 .section-price__text {
   margin-bottom: 2rem;
@@ -460,10 +473,16 @@ a:hover {
 .section-price__list {
   list-style: disc;
   line-height: 150%;
+  padding-inline-start: 2rem;
 }
 .section-price__inf {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.7);
+}
+@media (max-width: 800px) {
+  .section-price__inf {
+    font-size: 12px;
+  }
 }
 
 .feedback {
