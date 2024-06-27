@@ -134,7 +134,7 @@ html {
 
 body {
   font-family: "Manrope", sans-serif;
-  background-color: #ECEBE9;
+  background-color: #ecebe9;
   color: #545454;
   font-size: 1.6rem;
   font-weight: 400;
@@ -315,6 +315,10 @@ a:hover {
   }
 }
 .route-section__route {
+  width: 100%;
+  height: 100%;
+}
+.route-section__route_routeImg {
   max-width: 100%;
   max-height: 100%;
   padding: 5rem 1rem;
@@ -323,8 +327,20 @@ a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.route-section__route_routeClose {
+  max-width: 5rem;
+  max-height: 5rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  display: none;
+}
 @media (max-width: 650px) {
   .route-section__route {
+    height: 100vh;
+    background: linear-gradient(180deg, #29354b 0%, #ffffff 100%);
+    position: absolute;
+    z-index: 1;
     display: none;
   }
 }
