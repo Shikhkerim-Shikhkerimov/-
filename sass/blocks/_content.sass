@@ -15,6 +15,8 @@
     margin-bottom: 13rem
     @include adaptiv(horizontalPhone)
         margin-bottom: 10rem
+    @include adaptiv(verticalPhone)
+        display: none
     &:nth-child(4)
         margin-bottom: 0
     &__box
@@ -30,6 +32,9 @@
     &__title
         margin-bottom: 2rem
         font-size: 2.6rem
+    &__text
+        @include adaptiv(verticalPhone)
+        font-size: 12px
     &__img
         width: 100%
         height: 100%
@@ -44,3 +49,33 @@
     font-size: 8rem
     @include adaptiv(horizontalPhone)
         font-size: 5rem
+    @include adaptiv(verticalPhone)
+        font-size: 2px
+
+// контент для мобильной версии
+.mobileWraper
+    @include adaptiv(verticalPhone)
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr))
+        gap: 2rem
+
+.mobileContent
+    @include adaptiv(verticalPhone)
+        display: grid
+        grid-template-columns: 1fr
+        grid-template-rows: repeat(2, max-content)
+        margin-bottom: 0
+        &__box
+            width: 100%
+            grid-column: 1/-1
+            grid-row: 2/3
+            text-align: center
+        &__title
+            margin-bottom: 2rem
+            font-size: 20px
+        &__img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            grid-column: 1/-1
+            grid-row: 1/2
