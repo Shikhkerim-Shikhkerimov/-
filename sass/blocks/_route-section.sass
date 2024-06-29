@@ -6,35 +6,20 @@
         box-shadow: inset 0 4px 0 0 rgba(0, 0, 0, 0.26)
         background: linear-gradient(180deg, #29354b 0%, rgba(255, 255, 255, 0) 100%)
         position: relative
-        z-index: -1
         height: 100vh
         @include adaptiv(verticalPhone)
             background: none
             box-shadow: none
             z-index: 1
-    &__route
-        width: 100%
-        height: 100%
-        &_routeImg
-            max-width: 100%
-            max-height: 100%
-            padding: 5rem 1rem
-            position: absolute
-            top: 50%
-            left: 50%
-            transform: translate(-50%, -50%)
-        &_routeClose
-            max-width: 5rem
-            max-height: 5rem
-            position: absolute
-            top: 2rem
-            right: 2rem
-            display: none
+    &__img
+        max-width: 100%
+        max-height: 100%
+        padding: 5rem 1rem
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
         @include adaptiv(verticalPhone)
-            height: 100vh
-            background: linear-gradient(180deg, #29354b 0%, #ffffff 100%)
-            position: absolute
-            z-index: 1
             display: none
     &__box
         position: absolute
@@ -46,7 +31,9 @@
             left: 50%
             transform: translate(-50%, -50%)
             color: $black
-    &__text
+    &__link
+        &:nth-child(n + 2)
+            display: none
         @include adaptiv(verticalPhone)
             margin-bottom: 3rem
     &__mobileBtn
@@ -56,6 +43,34 @@
         @include adaptiv(verticalPhone)
             display: block
 
+// карта для мобильной версии
+.routeMobile
+    width: 100%
+    height: 100vh
+    background: linear-gradient(180deg, #29354b 0%, #ffffff 100%)
+    position: absolute
+    z-index: 1
+    display: none
+    &__img
+        max-width: 100%
+        max-height: 100%
+        padding: 1rem
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+    &__close
+        max-width: 5rem
+        max-height: 5rem
+        position: absolute
+        top: 2rem
+        left: 2rem
+    &__planMobile
+        width: 100%
+        position: absolute
+        top: 20%
+        left: 5%
+        color: $white
 
 .blackIcon
     display: none

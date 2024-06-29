@@ -137,11 +137,17 @@
         <section class="route-section">
             <div class="container">
                 <div class="route-section__wraper">
-                    <!-- карта -->
-                     <div class="route-section__route">
-                        <img class="route-section__route_routeImg" src="img/route-section/route-img.png" alt="img">
-                        <img class="route-section__route_routeClose" src="icons/routeClose.svg" alt="img">
+                    <!-- карта для мобильной версии -->
+                     <div class="route-section__mobile routeMobile">
+                        <img class="routeMobile__img" src="img/route-section/route-img.png" alt="img">
+                        <img class="routeMobile__close" src="icons/routeClose.svg" alt="img">
+                        <!-- план маршрута -->
+                        <div class="routeMobile__planMobile">
+                            <p class="route-section__link">День 1 <br><br>Иркутск → Малое море (пос. Сахюрта).</p>
+                        </div>
                      </div>
+                     <!-- карта -->
+                     <img class="route-section__img" src="img/route-section/route-img.png" alt="img">
                     <!-- контент -->
                     <div class="route-section__box">
                         <div class="title-box">
@@ -149,12 +155,14 @@
                             <img class="blackIcon" src="icons/routeIconBlack.svg" alt="img">
                             <h2 class="title-h2 title-h2_white colorBlack">Маршрут</h2>
                         </div>
-                        <p class="route-section__text">День 1 <br><br>Иркутск → Малое море (пос. Сахюрта).</p>
-                        <!-- кнопка -->
+                        <!-- план маршрута -->
+                        <div class="route-section__plan">
+                            <p class="route-section__link">День 1 <br><br>Иркутск → Малое море (пос. Сахюрта).</p>
+                        </div>
+                        <!-- кнопка для мобильной версии -->
                          <div class="route-section__mobileBtn">
                             <button class="nav-btn nav-btn_routeBtn"><a class="nav-btn__link" href="#!">ПОДРОБНЕЕ</a></button>
                          </div>
-                        
                     </div>
                 </div>
             </div>

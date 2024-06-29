@@ -142,6 +142,7 @@ body {
 
 .container {
   max-width: 1360px;
+  border: 1px solid red;
   padding: 0 1rem;
   margin: 0 auto;
 }
@@ -161,6 +162,7 @@ a:hover {
   width: 100%;
   position: fixed;
   background-color: #ECEBE9;
+  z-index: 10;
 }
 
 .nav-menus__wrapper {
@@ -241,7 +243,7 @@ a:hover {
   width: 100%;
   height: 100%;
   position: absolute;
-  z-index: 1;
+  z-index: 555;
   top: 50%;
   transform: translate(0, -50%);
 }
@@ -257,7 +259,7 @@ a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2;
+  z-index: 5555;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -304,7 +306,6 @@ a:hover {
   box-shadow: inset 0 4px 0 0 rgba(0, 0, 0, 0.26);
   background: linear-gradient(180deg, #29354b 0%, rgba(255, 255, 255, 0) 100%);
   position: relative;
-  z-index: -1;
   height: 100vh;
 }
 @media (max-width: 650px) {
@@ -314,11 +315,7 @@ a:hover {
     z-index: 1;
   }
 }
-.route-section__route {
-  width: 100%;
-  height: 100%;
-}
-.route-section__route_routeImg {
+.route-section__img {
   max-width: 100%;
   max-height: 100%;
   padding: 5rem 1rem;
@@ -327,20 +324,8 @@ a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.route-section__route_routeClose {
-  max-width: 5rem;
-  max-height: 5rem;
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  display: none;
-}
 @media (max-width: 650px) {
-  .route-section__route {
-    height: 100vh;
-    background: linear-gradient(180deg, #29354b 0%, #ffffff 100%);
-    position: absolute;
-    z-index: 1;
+  .route-section__img {
     display: none;
   }
 }
@@ -358,8 +343,11 @@ a:hover {
     color: #000;
   }
 }
+.route-section__link:nth-child(n+2) {
+  display: none;
+}
 @media (max-width: 650px) {
-  .route-section__text {
+  .route-section__link {
     margin-bottom: 3rem;
   }
 }
@@ -372,6 +360,38 @@ a:hover {
   .route-section__mobileBtn {
     display: block;
   }
+}
+
+.routeMobile {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, #29354b 0%, #ffffff 100%);
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+.routeMobile__img {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.routeMobile__close {
+  max-width: 5rem;
+  max-height: 5rem;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+.routeMobile__planMobile {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  color: #fff;
 }
 
 .blackIcon {

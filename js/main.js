@@ -11,14 +11,12 @@ document.getElementById("prev").onclick = function () {
 
 // кнопка секции route-section
 const routeBtn = document.querySelector(".nav-btn_routeBtn");
-const routeClose = document.querySelector(".route-section__route_routeClose");
+const routeClose = document.querySelector(".routeMobile__close");
 
 routeBtn.addEventListener("click", function () {
-  document.querySelector(".route-section__route").style.display = "block";
-  document.querySelector(".route-section__route_routeClose").style.display =
-    "block";
+  document.querySelector(".routeMobile").style.display = "block";
 });
 
 routeClose.addEventListener("click", function () {
-  document.querySelector(".route-section__route").style.display = "none";
+  document.querySelector(".routeMobile").style.display = "none";
 });
