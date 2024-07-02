@@ -43,3 +43,25 @@ document.getElementById("tourProgramPrev").onclick = function () {
   document.querySelector(".tourProgramWraper").prepend(lists[lists.length - 1]);
 };
 
+// меню мобильной версии
+const hamburger = document.querySelector(".mobile-menu__hamburger");
+const mbSpan1 = document.querySelector(".mobile-menu__span1");
+const mbSpan2 = document.querySelector(".mobile-menu__span2");
+const menu = document.querySelector(".mobile-menu__menu")
+
+hamburger.addEventListener("click", function () {
+  mbSpan1.classList.toggle("span-close");
+  mbSpan2.classList.toggle("span-close");
+  menu.classList.toggle("toogleMb")
+  document.body.classList.toggle("no-scroll");
+});
+
+const menuItem = document.querySelectorAll(".mobile-menu__item");
+
+for (let value of menuItem) {
+  value.addEventListener("click", function () {
+    menu.classList.toggle("toogleMb")
+    mbSpan1.classList.remove("span-close");
+    mbSpan2.classList.remove("span-close");
+  });
+}
