@@ -217,8 +217,8 @@ a:hover {
 @media (max-width: 800px) {
   .mobile-menu__hamburger {
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     background-color: rgba(236, 235, 233, 0.5764705882);
     position: relative;
@@ -247,10 +247,10 @@ a:hover {
   .mobile-menu__span1, .mobile-menu__span2 {
     transition: 0.4s;
     position: absolute;
-    top: 66%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 35px;
+    width: 30px;
     height: 5px;
     display: inline-block;
     border-radius: 17.5px;
@@ -270,7 +270,7 @@ a:hover {
   position: absolute;
 }
 .mobile-menu__item {
-  font-size: 16px;
+  font-size: 20px;
 }
 .mobile-menu__item:not(:last-child) {
   margin-bottom: 3rem;
