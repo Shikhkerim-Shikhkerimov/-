@@ -44,7 +44,7 @@ document.getElementById("tourProgramPrev").onclick = function () {
 };
 
 // меню мобильной версии
-const hamburger = document.querySelector(".mobile-menu__hamburger");
+const hamburger = document.querySelector(".mobile-menu__label");
 const mbSpan1 = document.querySelector(".mobile-menu__span1");
 const mbSpan2 = document.querySelector(".mobile-menu__span2");
 const menu = document.querySelector(".mobile-menu__menu")

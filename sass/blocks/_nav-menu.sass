@@ -42,7 +42,9 @@
         display: flex
         flex-direction: column
         align-items: flex-end
-    &__hamburger
+    &__input
+        display: none
+    &__label
         @include adaptiv(horizontalPhone)
             display: block
             width: 45px
@@ -57,12 +59,6 @@
         @include adaptiv(verticalPhone)
             top: 5px
             right: 5px
-    &__input
-        display: none
-    &__label
-        @include adaptiv(horizontalPhone)
-            display: block
-            cursor: pointer
     &__span1, &__span2
         @include adaptiv(horizontalPhone)
             transition: .4s

@@ -142,6 +142,7 @@ body {
 
 .container {
   max-width: 1360px;
+  border: 1px solid red;
   padding: 0 1rem;
   margin: 0 auto;
 }
@@ -214,8 +215,11 @@ a:hover {
     align-items: flex-end;
   }
 }
+.mobile-menu__input {
+  display: none;
+}
 @media (max-width: 800px) {
-  .mobile-menu__hamburger {
+  .mobile-menu__label {
     display: block;
     width: 45px;
     height: 45px;
@@ -229,18 +233,9 @@ a:hover {
   }
 }
 @media (max-width: 650px) {
-  .mobile-menu__hamburger {
+  .mobile-menu__label {
     top: 5px;
     right: 5px;
-  }
-}
-.mobile-menu__input {
-  display: none;
-}
-@media (max-width: 800px) {
-  .mobile-menu__label {
-    display: block;
-    cursor: pointer;
   }
 }
 @media (max-width: 800px) {
