@@ -79,3 +79,17 @@ document.querySelector(".form__close").addEventListener("click", function () {
   formWraper.style.display = "none";
   document.body.classList.toggle("no-scroll");
 });
+
+// плавный прокрутка между секциями
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for(let ancher of anchors) {
+  ancher.addEventListener("click", function(event) {
+    event.preventDefault()
+    const blackID = ancher.getAttribute('href')
+    document.querySelector('' + blackID).scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    })
+  })
+}
