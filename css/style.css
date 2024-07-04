@@ -348,14 +348,6 @@ a:hover {
   cursor: pointer;
 }
 
-.slider-section {
-  margin-bottom: 15rem;
-}
-@media (max-width: 800px) {
-  .slider-section {
-    margin-bottom: 10rem;
-  }
-}
 .slider-section__top {
   padding: 15rem 0;
 }
@@ -441,11 +433,11 @@ a:hover {
 }
 
 .route-section {
-  padding: 15rem 0;
+  padding-top: 15rem;
 }
 @media (max-width: 800px) {
   .route-section {
-    padding: 10rem 0;
+    padding-top: 10rem;
   }
 }
 .route-section__wraper {
@@ -562,11 +554,20 @@ a:hover {
 }
 
 .tour-program {
-  margin-bottom: 15rem;
+  padding: 15rem 0 10rem;
 }
 @media (max-width: 800px) {
   .tour-program {
-    margin-bottom: 10rem;
+    padding: 10rem 0 5rem;
+  }
+}
+
+.about-us {
+  padding-top: 15rem;
+}
+@media (max-width: 800px) {
+  .about-us {
+    padding-top: 10rem;
   }
 }
 
@@ -753,7 +754,7 @@ a:hover {
 
 .section-price {
   background: #29354B;
-  padding: 5rem 0;
+  padding: 10rem 0;
 }
 .section-price__content {
   display: flex;
