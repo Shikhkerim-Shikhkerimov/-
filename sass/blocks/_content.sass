@@ -40,15 +40,49 @@
         line-height: 120%
         @include adaptiv(verticalPhone)
             font-size: 12px
-    &__img
+    &__imgWrapper
         width: 100%
         height: 100%
-        object-fit: cover
         grid-row: 1/-1
+        position: relative
+        transition: all .2s ease-in
+        &::before
+            content:""
+            position: absolute
+            z-index: 1
+            left: 0
+            top: 0
+            width: 100%
+            height: 100%
+            background: rgba(0, 0, 0, .3)
+            transition: all .2s ease-in
+        &::after
+            content:""
+            opacity: 0
+            position: absolute
+            z-index: 2
+            top: 1.5rem
+            right: 1.5rem
+            bottom: 1.5rem
+            left: 1.5rem
+            border: .3rem solid $white
+            transform: scalex(0)
+            transition: all .2s ease-in
         &_left
             grid-column: 1/2
         &_right
             grid-column: 2/3
+    &__img
+        width: 100%
+        height: 100%
+        object-fit: cover
+    &:hover &__imgWrapper
+        transform: scale(1.02)
+    &:hover &__imgWrapper::before
+        background: none
+    &:hover &__imgWrapper::after
+        opacity: 1
+        transform: scalex(1)
 
 .number
     font-size: 8rem

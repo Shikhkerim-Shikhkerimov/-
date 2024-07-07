@@ -8,3 +8,15 @@
     @if $adaptiv == verticalPhone
         @media ( max-width: 650px)
             @content
+
+// подчеркивание заголовки при наведении
+@mixin titleUnderscore
+    content: ""
+    width: 0
+    height: 3px
+    background-color: $blue
+    border-radius: 5px
+    position: absolute
+    left: 0
+    bottom: -10px
+    transition: all .5s
