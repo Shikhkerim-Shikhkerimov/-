@@ -53,7 +53,7 @@ hamburger.addEventListener("click", function () {
   mbSpan1.classList.toggle("span-close");
   mbSpan2.classList.toggle("span-close");
   menu.classList.toggle("toogleMb");
-  document.body.classList.add("no-scroll");
+  document.body.classList.toggle("no-scroll");
 
 });
 
