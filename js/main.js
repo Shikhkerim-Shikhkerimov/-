@@ -10,7 +10,7 @@ document.getElementById("prev").onclick = function () {
 };
 
 // кнопка секции route-section
-const routeBtn = document.querySelector(".nav-btn_routeBtn");
+const routeBtn = document.querySelector(".route-btn");
 const routeClose = document.querySelector(".routeMobile__close");
 
 routeBtn.addEventListener("click", function () {
@@ -53,7 +53,8 @@ hamburger.addEventListener("click", function () {
   mbSpan1.classList.toggle("span-close");
   mbSpan2.classList.toggle("span-close");
   menu.classList.toggle("toogleMb");
-  document.body.classList.toggle("no-scroll");
+  document.body.classList.add("no-scroll");
+
 });
 
 const menuItem = document.querySelectorAll(".mobile-menu__item");
@@ -63,6 +64,8 @@ for (let value of menuItem) {
     menu.classList.toggle("toogleMb");
     mbSpan1.classList.remove("span-close");
     mbSpan2.classList.remove("span-close");
+    document.body.classList.remove("no-scroll");
+    formWraper.classList.remove("formWraperBlock")
   });
 }
 
@@ -71,13 +74,13 @@ const formWraper = document.querySelector(".form-wraper");
 const headerBtn = document.querySelector(".header-btn");
 
 headerBtn.addEventListener("click", function () {
-  formWraper.style.display = "block";
-  document.body.classList.toggle("no-scroll");
+  formWraper.classList.toggle("formWraperBlock")
+  document.body.classList.add("no-scroll");
 });
 
 document.querySelector(".form__close").addEventListener("click", function () {
-  formWraper.style.display = "none";
-  document.body.classList.toggle("no-scroll");
+  formWraper.classList.toggle("formWraperBlock")
+  document.body.classList.remove("no-scroll");
 });
 
 // плавный прокрутка между секциями

@@ -72,6 +72,28 @@
   text-align: center;
   cursor: pointer;
   animation: headerBtn 5.5s;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.header-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #FDFDFD;
+  transition: all 0.5s;
+}
+.header-btn:hover::after {
+  height: 100%;
+}
+.header-btn:hover {
+  transform: scale(1.05);
+}
+.header-btn:active {
+  transform: translateY(0.1rem);
 }
 @media (max-width: 800px) {
   .header-btn {
@@ -80,6 +102,21 @@
 }
 .header-btn__link {
   color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.header-btn:hover .header-btn__link {
+  color: #29354B;
+}
+
+.route-btn {
+  padding: 1rem 2.5rem;
+  border: 1px solid #000;
+  border-radius: 2.2rem;
+  background: none;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
 }
 
 .feedback-btn {
@@ -93,6 +130,19 @@
   text-align: center;
   color: #000;
   cursor: pointer;
+  position: relative;
+  transition: all 0.5s;
+  border: 2px solid #ECEBE9;
+}
+.feedback-btn:hover {
+  transform: scale(1.05);
+  background: none;
+}
+.feedback-btn:hover .feedback-btn__link {
+  color: #fff;
+}
+.feedback-btn:active {
+  transform: translateY(0.1rem);
 }
 @media (max-width: 800px) {
   .feedback-btn {
@@ -107,6 +157,9 @@
 .feedback-btn_btnForm {
   font-size: 16px;
   padding: 1rem 1.5rem;
+}
+.feedback-btn_btnForm:active {
+  transform: translateY(0.1rem);
 }
 
 .title-box {
@@ -426,6 +479,10 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.formWraperBlock {
+  display: block;
 }
 
 .form {
@@ -1036,6 +1093,9 @@ a {
 }
 .footer__link:hover {
   transform: scale(1.1);
+}
+.footer__link:active {
+  transform: translateY(0.1rem);
 }
 @media (max-width: 650px) {
   .footer__link {
