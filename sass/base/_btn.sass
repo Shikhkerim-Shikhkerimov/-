@@ -21,11 +21,12 @@
         height: 0%
         background-color: $background
         transition: all .5s
-    &:hover::after
-        height: 100%
-    &:hover
-        transform: scale(1.05)
-    &:active
+    @media (hover: hover) 
+        &:hover::after
+            height: 100%
+        &:hover
+            transform: scale(1.05)
+        &:active
         transform: $activeBtn
     @include adaptiv(horizontalPhone)
         font-size: 1.7rem
@@ -33,8 +34,9 @@
         color: $white
         position: relative
         z-index: 1
-    &:hover &__link
-        color: $blue
+    @media (hover: hover) 
+        &:hover &__link
+            color: $blue
 
 // кнопка для мобильной версии секции route-section
 .route-btn
@@ -61,13 +63,14 @@
     position: relative
     transition: all .5s
     border: 2px solid #ECEBE9
-    &:hover
-        transform: scale(1.05)
-        background: none
-    &:hover &__link
-        color: $white
-    &:active
-        transform: $activeBtn
+    @media (hover: hover) 
+        &:hover
+            transform: scale(1.05)
+            background: none
+        &:hover &__link
+            color: $white
+        &:active
+            transform: $activeBtn
     @include adaptiv(horizontalPhone)
         font-size: 1.7rem
     @include adaptiv(verticalPhone)

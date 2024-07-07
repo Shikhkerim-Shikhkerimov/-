@@ -23,10 +23,11 @@ body
     padding: 0 1rem
     margin: 0 auto
     overflow: hidden
-    &:hover .title-box__icon
-        transform: scale(1.05)
-    &:hover .title-box__title::after
-        width: 100%
+    @media (hover: hover) 
+        &:hover .title-box__icon
+            transform: scale(1.05)
+        &:hover .title-box__title::after
+            width: 100%
 
 // базовые стили для ссылок
 a
